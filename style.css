@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ephesis&family=Noto+Sans&family=PT+Sans&family=Roboto:wght@500&display=swap");
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     height: 100vh;
+     width: 100vw;
+     background: #383763;
+}
+.quote-container {
+     margin-top: 10rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.quote-container h2 {
+     font-family: sans-serif;
+     margin-bottom: 2rem;
+     color: #fff;
+     letter-spacing: 1px;
+     font-size: 38px;
+}
+.quote-container h2::after{
+   content: '';
+   width: 200px;
+   height: 2px;
+   display: block;
+   border-radius: 3px;
+   background-color: #fff;
+   position: relative;
+   top: 5px;
+   left: 50%;
+   transform: translateX(-50%);  
+}
+.quote-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column;
+     background-color: #ffffff;
+     min-width: 650px;
+     min-height: 50px;
+     border-radius: 10px;
+}
+.quote {
+     display: flex;
+     justify-self: space-between;
+     align-items: center;
+     perspective: 0cqmax;
+}
+.quote i {
+     /* position: relative;
+    top: 50px; */
+     font-size: 3.5rem;
+     color: #666;
+     
+     padding-top: 2rem;
+}
+.quote :first-child {
+     margin-left: 20px;
+}
+.quote :last-child {
+     margin-right: 20px;
+}
+.quote blockquote {
+
+    font-family: 'Dancing Script', cursive;
+     letter-spacing: 1px;
+     font-size: 2rem;
+     
+     color: #000;
+     width: 550px;
+     margin-left: 40px;
+     padding-top: 2rem;
+}
+.quote blockquote::before {
+     content: ' "';
+     color: #333;
+     margin-right: 3px;
+}
+.quote blockquote::after {
+    content: '" ' ;
+    color: #333;
+    margin-left: 10px;
+}
+span {
+     font-family: "PT Sans", sans-serif;
+     display: block;
+     margin-top: 20px;
+     position: relative;
+     right: -150px;
+     font-size: 1.2rem;
+     color: #000000;
+     padding-bottom: 5px;
+}
+.quote-container span::before {
+     content: "";
+     width: 15px;
+     height: 2px;
+     background-color: #000;
+     position: absolute;
+     top: 50%;
+     left: -25px;
+}
